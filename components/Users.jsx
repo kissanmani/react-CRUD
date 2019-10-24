@@ -16,7 +16,7 @@ class Users extends Component {
             return user.isEditing === true ? (
 
                 <tr key={index}>
-                <td><img src={(val) => { this.avatarImg = val }}  defaultValue={user.avatarImg} /></td>
+                  <td><img src= "{(val) => { this.avatarImg = val }}"   /></td>
                     <td><input type="text" ref={(val) => { this.name = val }} required defaultValue={user.name} /></td>
                     <td><input type="text" ref={(val) => { this.companyName = val }} required defaultValue={user.companyName} /></td>
                     <td><input type="text" ref={(val) => { this.emailId = val }} required defaultValue={user.emailId} /></td>
