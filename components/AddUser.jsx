@@ -30,6 +30,7 @@ class AddUser extends Component {
         return (
             <div className="row">
                 <form onSubmit={this.handleSubmit}>
+                
                     <div className="form-group">
                         <label>Name :</label>
                         <input name="name" className="input-form" autoComplete="off" placeholder="" required type="text" onChange={this.updateState} />
