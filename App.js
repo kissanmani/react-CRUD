@@ -7,11 +7,9 @@ class App extends Component{
     // Default dummy data
     state = {
 
-        users:[
+        users:
+        [
           {name:"Kissan", companyName:"gtpl", emailId:"mani@gmail.com", contactNo:"8344887993", designation:"developer", isEditing:false}
-          
-         
-    
         ]
       }
       addUser = (newUser) => {
