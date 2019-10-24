@@ -8,9 +8,8 @@ class App extends Component{
     state = {
 
         users:[
-          {name:"Kissan", companyName:"gtpl", emailId:"mani@gmail.com", contactNo:"8344887993", designation:"developer", isEditing:false},
-          {name:"Mani", companyName:"gtpl", emailId:"mani@gmail.com", contactNo:"8344887993", designation:"developer", isEditing:false}
-
+          {name:"Kissan", companyName:"gtpl", emailId:"mani@gmail.com", contactNo:"8344887993", designation:"developer", isEditing:false}
+          
          
     
         ]
