@@ -9,7 +9,7 @@ class App extends Component{
 
         users:
         [
-          {name:"Kissan", companyName:"gtpl", emailId:"mani@gmail.com", contactNo:"8344887993", designation:"developer", isEditing:false}
+          {avatarImg: "https://img.mobiscroll.com/demos/Requiem_for_a_Dream.png", name:"Kissan", companyName:"gtpl", emailId:"mani@gmail.com", contactNo:"8344887993", designation:"developer", isEditing:false}
         ]
       }
       addUser = (newUser) => {
@@ -34,6 +34,7 @@ class App extends Component{
 
       updateUser = (i, name, companyName, emailId, contactNo, designation) => {
         let users = this.state.users;
+        users[i].avatarImg = avatarImg;
         users[i].name = name;
         users[i].companyName = companyName;
         users[i].emailId = emailId;
