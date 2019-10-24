@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+:root {
+  --white: #ffffff;
+  --border-cover: #dedede;
+  --bg-striped: #efefef;
+  --bg-tableHead: #2f2f2f;
+
+  /* btn colors */
+
+  --btnView: #31759c;
+  --btnEdit: #bf8314;
+  --btnDelete: #b10a43;
+  --btnUpdate: #4f7d40;
+  --btnAdd: #0a350c;
+
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.Main-Wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.titleText {
+  margin: 2% 0;
+}
+.block-addEmployee {
+    width: 55%;
+    margin: 5% auto;
+    border: 1px solid gray;
+    padding: 5% 5% 0%;
+    height: 60vh;
+}
+table {
+  width: 100%;
+}
+thead {
+  background-color: var(--bg-tableHead);
+  
+}
+th {
+  font-size: 16px;
+  color: var(--white);
+}
+td {
+  font-size: 15px;
+}
+td, th {
+  border: 1px solid var(--bg-tableHead);
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+input {
+  width: 100%;
+  height: 25px;
+  font-size: 16px;
+}
+.input-form {
+  margin: 5px 0px 12px 0px;
+}
+.input-form:focus {
+  outline: none;
+}
+tr:nth-child(even) {
+  background-color: var(--bg-striped);
+}
+.actions-width {
+  
+  min-width : 200px;
+}
+
+/* btn styles */
+.btn {
+  padding: 3px 15px;
+  font-size: 14px;
+  border-radius: 0px;
+  color: var(--white);
+  border: 0px;
+  min-width: 60px;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btnView {
+  background-color: var(--btnView);
+}
+.btnEdit {
+  background-color: var(--btnEdit);
+}
+.btnDelete {
+  background-color: var(--btnDelete);
+}
+.btnUpdate {
+  background-color: var(--btnUpdate);
+}
+.btnAdd {
+  background-color: var(--btnAdd);
+  padding: 10px 25px;
+}
+.pull-right {
+  float: right;
+}
