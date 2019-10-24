@@ -16,6 +16,7 @@ class Users extends Component {
             return user.isEditing === true ? (
 
                 <tr key={index}>
+                <td><div ref={(val) => { this.avatarImg = val }}  defaultValue={user.avatarImg} > </div></td>
                     <td><input type="text" ref={(val) => { this.name = val }} required defaultValue={user.name} /></td>
                     <td><input type="text" ref={(val) => { this.companyName = val }} required defaultValue={user.companyName} /></td>
                     <td><input type="text" ref={(val) => { this.emailId = val }} required defaultValue={user.emailId} /></td>
@@ -29,6 +30,7 @@ class Users extends Component {
             ) : (
 
                     <tr key={index}>
+                        <td>{user.avatarImg}</td>
                         <td>{user.name}</td>
                         <td>{user.companyName}</td>
                         <td>{user.emailId}</td>
@@ -44,6 +46,7 @@ class Users extends Component {
             <table className="striped employee-table">
                 <thead>
                     <tr>
+                        <th>profile</th>
                         <th>Name</th>
                         <th>Company Name</th>
                         <th>Email Id</th>
